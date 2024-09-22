@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            width: 100%;
+            height: 700px;
+            background-image: url(./girl.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 25px;
+        }
+
+        #part1 {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            width: 30%;
+            margin-left: 365px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        a:hover {
+            background-color: #1c1c1c;
+
+            color: white;
+        }
+
+        #key {
+            color: white;
+            font-size: 20px;
+
+        }
+
+        #key>span {
+            font-size: 30px;
+            align-items: center;
+        }
+
+        #main {
+            width: 100vw;
+            height: 550px;
+            /* background-color: #1c1c1c; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #center {
+            width: 50%;
+            height: 500px;
+            /* display: block;
+            justify-content: center;
+            align-items: center; */
+
+
+            /* background-color: white; */
+        }
+
+        #icon {
+            font-size: 55px;
+            margin: 85px 0px 0px 345px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            padding: 10px 0px 10px 15px;
+            font-size: 17px;
+            font-weight: 300;
+            color: #ddd;
+            letter-spacing: 1px;
+
+            /* border: none; */
+            background: transparent;
+            box-sizing: border-box;
+            font-family: 'Mukta', sans-serif;
+            width: 350px;
+            outline: none;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #fc636b;
+            border: none;
+            color: #fff;
+            padding: 11px 15px;
+            text-transform: uppercase;
+            font-family: 'Mukta', sans-serif;
+            font-size: 16px;
+            width: 350px;
+            margin-top: 25px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            
+            
+            border-radius:35px;
+        }
+        #abc{
+            position: absolute;
+            top: 262px;
+            left: 650px;
+        }
+        #abc2{
+            position: absolute;
+            top: 332px;
+            left: 650px;
+        }
+        #forget>a{
+            position:absolute;
+            top: 450px;
+            left: 710px;
+            filter: brightness(80%);
+            filter: grayscale(10%);
+        }
+        #option{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 300px;
+            position: relative;
+            top: 40px;
+            left: 230px;
+            color: white;
+        }
+        #footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        #part2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div id="key">
+            <i class="fa-solid fa-key fa-beat fa-2xl" style="color: #ffffff;"></i>
+            <span style="color: white; font-family: 'Times New Roman', Times, serif;">Key</span>
+        </div>
+        <div id="part1">
+            <li><a href="">Login</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Register</a></li>
+            <li><a href="">Contact</a></li>
+
+        </div>
+
+    </nav>
+    <div id="main">
+        <div id="center">
+            <div id="icon">
+                <i class="fa-brands fa-html5" style="color: #fafafa;"></i>
+            </div>
+            <div>
+                <form action="">
+                    <div >
+                        <span><i id="abc" class="fa-solid fa-user fa-beat fa-lg" style="color: #ffffff;"></i></span>
+                        <input type="text" name="name" id="name" placeholder="Username" required>
+                    </div>
+                    <div>
+                        <span><i id="abc2" class="fa-solid fa-lock fa-beat fa-xl" style="color: #fcfcfc;"></i></span>
+                        <div><input type="password" name="password" id="pass" placeholder="Password" required></div>
+                    </div>
+                    <div>
+                        <button type="submit" onclick="welcome()">GET STARTED</button>
+                    </div>
+                </form>
+                <div id="forget"><a href="">Forgot Passward ?</a></div>
+                <div id="option"><p>CREATE ACCOUNT</p>
+                <p>NEED HELP</p></div>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="footer">
+        <div id="part2">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms Of Use</a></li>
+        </div>
+        <div><p>© 2019 Key. All Rights Reserved | Design By W3layouts</p></div>
+    </div>
+
+
+    <script>
+        function welcome(){
+            window.open("https://www.instagram.com/")
+        }
+    </script>
+</body>
+
+</html>
